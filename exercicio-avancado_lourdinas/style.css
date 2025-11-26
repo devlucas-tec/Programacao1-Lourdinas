@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto; 
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#btNovaJanela {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 12px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+}
+
+#btNovaJanela:hover {
+    background: #218838;
+    transform: translateY(-2px);
+}
+
+.botoes-estacao-group {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.botoes-estacao-group button { 
+    flex-grow: 1;
+    padding: 15px 10px;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+#btVerao {
+    background: #a6ff00; 
+}
+
+#btInverno {
+    background: #1e90ff; 
+}
+
+#btOutono {
+    background: #ff4500; 
+}
+
+.opcoes-container {
+    display: none; 
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #e2e2e2;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.resultado-final {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.botoes-filhos-group {
+    display: flex; 
+    justify-content: center; 
+    gap: 10px; 
+    margin-top: 15px;
+}
+
+.btn-opcao-estacao {
+    flex-grow: 0; 
+    flex-shrink: 0; 
+    max-width: 150px;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    transition: background 0.2s;
+}
+
+.btn-economico {
+    background: #ff69b4;
+}
+.btn-confortavel {
+    background: #ff8c00; 
+}
+.btn-outro {
+    background: #6a5acd;
+}
+
+.btn-opcao-estacao:hover {
+    opacity: 0.9;
+}

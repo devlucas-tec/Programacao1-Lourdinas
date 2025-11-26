@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Lourdinas - Clima Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Exercício 06 - Lourdinas</h1>
+        <h3>Um sistema de controle de clima inteligente ajusta automaticamente a temperatura de um ambiente conforme dois fatores: a estação do ano e o nível de conforto selecionado pelo usuário. Primeiro, o sistema deve verificar se a estação informada é "verao", "inverno" ou "outono". Depois, dentro de cada estação, a temperatura alvo depende do nível de conforto: </h3>
+    
+        <div style="margin: 20px 0;">
+            <ul>
+                <li><strong>Verão</strong></li>
+                <ul>
+                    <li>"economico" → 26° C</li>
+                    <li>"confortavel" → 23° C</li>
+                </ul>
+            </ul>
+            
+            <ul>
+                <li><strong>Inverno</strong></li>
+                <ul>
+                    <li>"economico" → 20° C</li>
+                    <li>"confortavel" → 24° C</li>
+                </ul>
+            </ul>
+    
+            <ul>
+                <li><strong>Outono</strong></li>
+                <ul>
+                    <li>"economico" → 22° C</li>
+                    <li>"confortavel" → 21° C</li>
+                </ul>
+            </ul>
+        </div>
+        
+        <div style="text-align: center; margin-top: 20px; border-top: 1px solid #eee; padding-top: 15px;">
+            <h3>Se a estação informada não for nenhuma das válidas, o sistema deve retornar: "Estação inválida." 
+                Se o nível de conforto não for "economico" nem "confortavel", o sistema deve retornar: "Nível de conforto inválido." 
+                Desenvolva, em JavaScript, um código que receba a estação e o nível de conforto e retorne a temperatura configurada pelo sistema. 
+            </h3>
+        </div>
+    
+        <h3>Exemplos:</h3>
+        <ul>
+            <li>Entrada: "verao", "confortavel" → Saída: 23° C</li>
+            <li>Entrada: "inverno", "economico" → Saída: 20° C</li>
+            <li>Entrada: "primavera", "confortavel" → Saída: "Estação inválida."</li>
+            <li>Entrada: "outono", "luxo" → Saída: "Nível de conforto inválido."</li>
+        </ul>
+    
+        <button id="btNovaJanela">Clique para Iniciar a Atividade</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

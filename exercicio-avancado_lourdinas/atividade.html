@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade - Controle de Clima</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: #007bff;">Selecione a Estação e o Nível de Conforto</h1>
+        
+        <div class="botoes-estacao-group">
+            <button id="btVerao">Verão</button>
+            <button id="btInverno">Inverno</button>
+            <button id="btOutono">Outono</button>
+        </div>
+        
+        <div class="resultado-final" id="resultadoFinal">
+            Temperatura configurada: <span>N/A</span>
+        </div>
+
+        <div id="opcoesVerao" class="opcoes-container">
+            <h2>Configuração para o Verão</h2>
+            <div class="botoes-filhos-group">
+                <button id="btEconomicoVerao" class="btn-opcao-estacao btn-economico">Econômico (26°C)</button>
+                <button id="btConfortavelVerao" class="btn-opcao-estacao btn-confortavel">Confortável (23°C)</button>
+                <button id="btOutroVerao" class="btn-opcao-estacao btn-outro">Outro (Inválido)</button>
+            </div>
+        </div>
+        
+        <div id="opcoesInverno" class="opcoes-container">
+            <h2>Configuração para o Inverno</h2>
+            <div class="botoes-filhos-group">
+                <button id="btEconomicoInverno" class="btn-opcao-estacao btn-economico">Econômico (20°C)</button>
+                <button id="btConfortavelInverno" class="btn-opcao-estacao btn-confortavel">Confortável (24°C)</button>
+                <button id="btOutroInverno" class="btn-opcao-estacao btn-outro">Outro (Inválido)</button>
+            </div>
+        </div>
+        
+        <div id="opcoesOutono" class="opcoes-container">
+            <h2>Configuração para o Outono</h2>
+            <div class="botoes-filhos-group">
+                <button id="btEconomicoOutono" class="btn-opcao-estacao btn-economico">Econômico (22°C)</button>
+                <button id="btConfortavelOutono" class="btn-opcao-estacao btn-confortavel">Confortável (21°C)</button>
+                <button id="btOutroOutono" class="btn-opcao-estacao btn-outro">Outro (Inválido)</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
